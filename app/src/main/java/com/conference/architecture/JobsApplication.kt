@@ -32,7 +32,8 @@ class JobsApplication : Application() {
         Realm.setDefaultConfiguration(config)*/
 
         appComponent = DaggerAppComponent.builder()
-            .dataModule(DataModule("https://isol.comunity.qa.myapps.mx/"))
+            .appModule(AppModule(this))
+            .dataModule(DataModule("https://jobs.github.com/"))
             .build()
 
         JobsInjector.context = this

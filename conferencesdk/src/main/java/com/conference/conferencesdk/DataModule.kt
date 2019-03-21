@@ -20,7 +20,7 @@ import javax.inject.Singleton
  * Created by Dinorah Tovar on 3/19/19.
  */
 @Module
-class DataModule(private val baseUrl: String, private val debugInterceptor: Interceptor?) {
+class DataModule(private val baseUrl: String) {
 
     /**
      * CompanionObject
@@ -45,9 +45,6 @@ class DataModule(private val baseUrl: String, private val debugInterceptor: Inte
             .addInterceptor(interceptor)
             .connectTimeout(connectTimeOut, TimeUnit.SECONDS)
             .readTimeout(readTimeOut, TimeUnit.SECONDS)
-        debugInterceptor?.let {
-            builder.addNetworkInterceptor(debugInterceptor)
-        }
         return builder.build()
     }
 

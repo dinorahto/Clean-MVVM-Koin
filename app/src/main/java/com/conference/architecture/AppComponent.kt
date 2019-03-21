@@ -11,7 +11,7 @@ import javax.inject.Singleton
  * Component to inject the Data Module and the App Module
  */
 @Singleton
-@Component(modules = [(DataModule::class)])
+@Component(modules = [(DataModule::class), (AppModule::class)])
 interface AppComponent : DataComponent {
     fun inject(jobViewModel: JobsViewModel)
 }
