@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Jobs on Github</string>
+
+    <string name="title_jobs">Jobs available</string>
 </resources>

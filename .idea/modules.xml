@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Clean-MVVM-Koin.iml" filepath="$PROJECT_DIR$/Clean-MVVM-Koin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conferencesdk/conferencesdk.iml" filepath="$PROJECT_DIR$/conferencesdk/conferencesdk.iml" />
     </modules>
   </component>
 </project>
