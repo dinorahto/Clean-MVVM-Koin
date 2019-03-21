@@ -41,13 +41,3 @@ Don’t block, keep moving, coroutines are simple, scalable and bulletproof for 
 
 ## Contact ##
 If you are facing some trouble with the code and need information, please send an email to: dinorahto@gmail.com
-
-## License ##
-=======
-
-Copyright 2018 INGENIERIA DE SOLUCIONES S.A de C.V.
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-[Apache](http://www.apache.org/licenses/LICENSE-2.0)
