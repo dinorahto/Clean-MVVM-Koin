@@ -1,11 +1,74 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorNiceBlue</item>
+        <item name="colorPrimaryDark">@color/colorNiceBlue</item>
+        <item name="colorAccent">@color/colorNiceBlue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorDirtyWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- Not action bar theme -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorDirtyWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorDirtyWhite</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorDirtyWhite</item>
+    </style>
+
+    <!-- ProgressBar Theme -->
+    <style name="AppTheme.ProgressBar">
+        <item name="colorAccent">@color/colorNiceBlue</item>
+    </style>
+
+    <!-- ProgressBar Theme -->
+    <style name="AppTheme.ProgressBarHorizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:scaleY">@null</item>
+        <item name="android:scaleX">@null</item>
+    </style>
+
+    <!-- Toolbar Theme -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlack</item>
+    </style>
+
+    <!-- Dialog General -->
+    <style name="DialogGeneral" parent="@style/Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorNiceBlue</item>
+        <item name="colorPrimary">@color/colorNiceBlue</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorDirtyWhite</item>
+    </style>
+
+    <!-- Edit text -->
+    <style name="EditText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorNiceBlue</item>
+        <item name="android:textColorHint">@color/colorBlackGray</item>
+        <item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="colorControlActivated">@color/colorLightGray</item>
+        <item name="colorControlHighlight">@color/colorLightGray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Edit text -->
+    <style name="EditTextBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorNiceBlue</item>
+        <item name="android:textColorHint">@color/colorBlackGray</item>
+        <item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="colorControlActivated">@color/colorNiceBlue</item>
+        <item name="colorControlHighlight">@color/colorNiceBlue</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
 </resources>
